@@ -1,0 +1,204 @@
+#a
+{
+  font-family: myfont;
+
+}
+@font-face {
+    font-family: myfont;
+    src: url(felt.ttf);
+}
+body
+{
+    overflow: hidden;
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color:	#F5FFF5;
+    z-index: 1;
+
+}
+.login
+{
+    padding-top: 15px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent;
+    padding-left: 1224px;
+
+
+}
+
+#navcontainer ul li
+{
+    display: inline;
+
+}
+#navcontainer ul li a
+{
+    text-decoration: none;
+    padding: .2em 1em;
+    font-size: 25px;
+    color: #777;
+
+}
+#navcontainer ul li a:hover
+{
+    background-color:	#E0FFE0
+}
+#navcontainer ul
+{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-top: 65px;
+}
+mid img
+{
+    position: relative;
+    width: 100%;
+
+}
+ h2
+{
+    position: absolute;
+    top: 180px;
+    left: 10;
+    width: 100%;
+    text-align: center;
+}
+body {scrollbar-3dlight-color:#ffd700;
+    scrollbar-arrow-color:#ff0;
+    scrollbar-base-color:#ff6347;
+    scrollbar-darkshadow-color:#ffa500;
+    scrollbar-face-color:#008080;
+    scrollbar-highlight-color:#ff69b4;
+    scrollbar-shadow-color:#f0f}
+.second
+{
+    background-color: floralwhite;
+
+}
+.second h2
+{
+  top: 650px;
+    position: absolute;
+    left: 10;
+    text-align: center;
+    width: 100%;
+}
+#th
+{
+    text-align:center;
+}
+#login
+{
+
+
+    background-color:white;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top:0px;
+    line-height: 80px;
+    border-radius: 35px;
+    height: 170px;
+
+
+}
+#loginbutton
+{
+    margin-top: 20px;
+    background-color: #66FF66;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 35px;
+    height: 45px;
+    padding-top: 10px;
+
+}
+
+input
+{
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #777;
+    font-size: 25px;
+}
+#schedule li
+{
+    display: inline;
+
+}
+#schedule li button
+{
+    border-radius: 20px;
+    height: 53px;
+    width: 210px;
+    border: none;
+    background-color: lightskyblue;
+}
+#general
+{
+
+    line-height: 30px;
+    font-size: 25px;
+}
+
+#button_general
+{
+    border-radius: 20px;
+    height: 53px;
+    width: 150px;
+    border: none;
+    background-color: lightskyblue;
+}
+#register-form label {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+#register-form input
+{
+    border-radius: 9px;
+    border:1px solid #31b0d5;
+    margin-left: 80px;
+}
+.modal
+{
+    overflow: hidden;
+    z-index:1;
+
+}
+.box {
+    background: #2db34a;
+
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width: 95px;
+    border:none;
+
+}
+.box:hover {
+    background: #ff7b29;
+    border-radius: 50%;
+
+}
+.navbar-nav{
+    color: #563d7c;
+}

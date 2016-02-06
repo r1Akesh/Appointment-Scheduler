@@ -1,0 +1,128 @@
+<!DOCTYPE html  >
+<html>
+<head>
+<link rel="stylesheet"type="text/css" href="scratch.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="jquery/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+</head>
+<body id="a">
+
+<nav class="fixed-nav-bar">
+
+    <h1 align="center">Online Appointment Scheduler</h1>
+    <div id="navcontainer">
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+             <li>
+                 <button style="border: none;background-color: transparent;font-size: 25px" tabindex="-1" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#mymodal">signup</button>
+
+             </li>
+            <li>
+                <a href="login.php" data-rel="dialog" data-transition="flip">LoGin </a>
+
+            </li>
+
+
+
+        </ul>
+    </div>
+
+</nav>
+
+
+
+<div class="mid" >
+
+    <div id="mymodal" class="modal fade" role="dialog" >
+        <div class="modal-dialog" style="height: 600px;width:500px;">
+
+
+            <div class="modal-content" style="height: 100%;background-color:#FDE8D7">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 style="margin-left: 45%">Sign Up</h5>
+                <form id ='register-form' name="reg" action="signup.php" method="get" onsubmit="return(check())">
+                    <div style="margin: 40px;height: 500px;font-size: 20px;background-color: #ffffff;border-radius: 30px">
+                        <label style="margin-left: 40%">Name</label>
+                        <br>
+                        <input type="text" name="var_name">
+                        <br>
+                        <br>
+                        <label style="margin-left: 40%">password:</label>
+                        <br>
+                        <input type="password" name="var_pass" style="margin-left: 20%" >
+                        <br><br>
+                        <label style="margin-left: 30%">confirm password</label>
+                        <br>
+                        <input  type="password" name="cpassword">
+                        <br><br>
+                        <label style="margin-left: 30%"> Contact Number:</label>
+                        <br>
+                        <input type="text" name="var_phone">
+                        <br> <br>
+                        <label style="margin-left: 40%">Email</label>
+                        <input type="email" name="var_email">
+                        <br><br>
+                        <button class="btn btn-success" name="clk" type="submit" style="margin-left: 40%;box-shadow: none;background-color: #009A31">sign me Up</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="height: auto">
+
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+    </ol>
+
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="trial2.jpg" >
+            <h2 style="margin-top: 100px">EasY tO schEdulE meeTingS</h2>
+        </div>
+
+        <div class="item" >
+            <img src="second.jpg" >
+            <h2 style="margin-top: 50px">AvoId coNfliCt booKingS</h2>
+            <br><br><br>
+            <h2  style="margin-top: 150px">SeNd manual reMinders</h2>
+            <br><br><br>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+</body>
+ <script>
+      function check()
+      {
+          if(document.reg.var_pass.value!=document.reg.cpassword.value)
+          {
+              alert('password not matched');
+              document.reg.var_pass.focus();
+              return false;
+          }
+
+      }
+ </script>
+</html>

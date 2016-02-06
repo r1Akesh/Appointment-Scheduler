@@ -1,0 +1,19 @@
+.box {
+    background: #2db34a;
+
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width: 95px;
+    border:none;
+
+}
+.box:hover {
+    background: #ff7b29;
+    border-radius: 50%;
+
+}

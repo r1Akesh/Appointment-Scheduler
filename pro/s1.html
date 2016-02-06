@@ -1,0 +1,109 @@
+<!DOCTYPE html  >
+<html>
+<head>
+    <link rel="stylesheet"type="text/css" href="scratch.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body id="a">
+<nav class="fixed-nav-bar">
+
+    <div id="navcontainer">
+        <ul>
+            <li>
+                <a href="#u1">AbouT Us</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <button style="border: none;background-color: transparent;font-size: 25px" tabindex="-1" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#mymodal">signup</button>
+
+            </li>
+            <li>
+                <a href="login.php" data-rel="dialog" data-transition="flip">LoGin </a>
+
+            </li>
+
+
+
+        </ul>
+    </div>
+
+</nav>
+
+
+<div class="mid" >
+
+    <div id="mymodal" class="modal fade" role="dialog" >
+        <div class="modal-dialog" style="height: 500px;width:500px;">
+
+
+            <div class="modal-content" style="height: 100%;background-color:#FDE8D7">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 style="margin-left: 45%">Sign Up</h5>
+                <form id ='register-form' name="reg" action="signup.php" method="get" onsubmit="return(check())">
+                    <div style="margin: 40px;height: 400px;font-size: 20px;background-color: #ffffff;border-radius: 30px">
+                        <label style="margin-left: 40%">user id</label>
+                        <br>
+                        <input type="text" name="var_name">
+                        <br>
+                        <br>
+                        <label style="margin-left: 40%">password</label>
+                        <br>
+                        <input type="password" name="var_pass" >
+                        <br>
+                        <br>
+                        <label style="margin-left: 30%">confirm password</label>
+                        <br>
+                        <input  type="password" name="cpassword">
+                        <br> <br> <br>
+
+                        <button class="btn btn-success" name="clk" type="submit" style="margin-left: 40%;box-shadow: none;background-color: #009A31">sign me Up</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <img src="trial2.jpg" style="width: 100%; height: 550px">
+    <h2>EasY tO schEdulE meeTingS</h2>
+</div>
+<div class="second" id="u1">
+    <img src="second.jpg" style="width: 100%;height: auto">
+    <div >
+        <h2 id="th">This scheduLing tooL alloWs you to Schedule your appointments</h2>
+        <br>
+        <br>
+        <h2 id="th" style="top: 800px">AvoId coNfliCt booKingS</h2>
+        <br>
+        <br>
+        <h2  id="th" style="top:900px">SeNd manual reMinders</h2>
+        <br>
+        <br>
+        <h2 id="th" style="top: 1040px">Demand additional information such as e-mail address or phone number</h2>
+    </div>
+</div>
+
+
+</body>
+<script>
+    function check()
+    {
+        if(document.reg.var_pass.value!=document.reg.cpassword.value)
+        {
+            alert('password not matched');
+            document.reg.var_pass.focus();
+            return false;
+        }
+
+    }
+</script>
+</html>
+html
+{
+overflow-y: scroll;
+
+}
